@@ -1,0 +1,123 @@
+
+footer{
+    width: 100%;
+    background: linear-gradient(45deg, #e4b20e, #ecad00,rgb(247, 149, 2));
+    /* background: linear-gradient(45deg, rgb(13, 1, 144), rgb(35, 0, 177),rgb(0, 0, 0), rgb(21, 2, 85), rgb(35, 0, 177), rgb(10, 0, 98)); */
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 50px 0;
+    flex-direction: column;
+}
+
+footer .row{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+}
+
+footer .row .box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer .row .box .logo,
+footer .row .box .logo a{
+    /* padding: 20px; */
+    font-size: 34px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+footer .row .box .logo .l1{
+    text-decoration: overline;
+    color: white;
+}
+
+
+
+
+footer .row .box p{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px;
+    color: #fff;
+    /* text-align: center; */
+}
+
+footer .row .box .share{
+    width: 100%;
+    /* height: 50vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .row .box .share a img{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+footer .row .location{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+footer .row .location h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer .row .location p{
+    padding: 10px;
+}
+
+footer .row .copyright{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30px;
+    
+}
+
+footer .row .copyright p{
+    padding: 10px;
+}
+
+footer .row .copyright p a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 2px;
+    /* text-align: center; */
+}
+
+footer .row .copyright p a:hover{
+    color: rgb(247, 149, 2);
+    text-decoration: underline;
+    cursor: pointer;
+}

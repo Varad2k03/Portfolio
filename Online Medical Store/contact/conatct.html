@@ -1,0 +1,178 @@
+<!-- <?php
+   $conn = mysqli_connect("localhost","root","","db1")or die("Couldn't connect");
+
+   
+
+
+    // if(isset($_POST["submit"])) {
+    //   $username = $_POST["name"];
+    //   $email = $_POST["email"];
+    //   $phone = $_POST["phone"];
+    //   $message = $_POST["message"];
+    // }
+    if(isset($_POST["submit"])) {
+      $username = mysqli_real_escape_string($conn, $_POST["name"]);
+      $email = mysqli_real_escape_string($conn, $_POST["email"]);
+      $phone = mysqli_real_escape_string($conn, $_POST["phone"]);
+      $message = mysqli_real_escape_string($conn, $_POST["message"]);
+    
+      $sql = "INSERT INTO user_feedback (username, email, phone, message) VALUES ('$username', '$email', '$phone', '$message')";
+    
+      if(mysqli_query($conn, $sql)) {
+        echo "Data inserted successfully!";
+      } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+      }
+    }
+
+    mysqli_close($conn);
+
+
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="../header/header.css">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="container">
+        <div class="logo">
+            <a class="l1" href="../home/home.php">Medi</a>
+            <a class="l2" href="../home/home.php">Kart</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../home/home.php">Home</a></li>
+                <li><a href="../home/#featured">Shop</a></li>
+                <li><a href="../about/about.php">About Us</a></li>
+                <li><a href="../contact/conatct.php">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="login">
+            <a href="../php/logout.php">Log Out</a>
+        </div>
+    </div>
+</header>
+
+  <div class="container1">
+    <span class=""></span>
+    <!-- <img src="img/shape.png" class="square" alt="" /> -->
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Let's get in touch</h3>
+        <p class="text">
+          <!-- Write beautiful bio on medical shop -->
+          Medikart is a medical shop which provides all the medicines at your door step. We are here to help you in
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="img/map.png" class="icon" alt="" />
+            <p> Nanded Maharashtra, India 431605</p>
+          </div>
+          <div class="information">
+            <img src="img/mail.png" class="icon" alt="" />
+            <p>medikart@gmail.com</p>
+          </div>
+          <div class="information">
+            <img src="img/phone-call.png" class="icon" alt="" />
+            <p>+91 999 988 8777</p>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <p>Connect with us :</p>
+          <div class="social-icons" target="blank">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+
+        <form  action="" method="POST" autocomplete="off">
+          <h3 class="title">Contact us</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" placeholder="Username" />
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" placeholder="Email" />
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" placeholder="Mobile Number" />
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input" placeholder="Message"></textarea>
+          </div>
+          <input type="submit" name="submit" value="Send" class="btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+
+
+    <div class="row">
+
+        <div class="box">
+            <div class="logo">
+                <a class="l1" href="#">Medi</a>
+                <a class="l2" href="#">Kart</a>
+            </div>
+            <p>MediKart is a online medical store where you can buy medicines and other medical products.</p>
+            <div class="share">
+                <a href="#"><img src="img/facebook.png" alt=""></a>
+                <a href="#"><img src="img/twitter.png" alt=""></a>
+                <a href="#"><img src="img/instagram.png" alt=""></a>
+                <a href="#"><img src="img/linkedin.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="location">
+            <h3>Store Location</h3>
+            <p class="address">Nanded, Maharashtra 431605</p>
+            <p class="Phone">+91 999 988 8777</p>
+            <p class="Days">Monday-Saturday</p>
+        </div>
+
+
+    </div>
+    <div class="row">
+
+        <div class="copyright">
+            <p>© 2023-24 <a>MediKart</a> All rights reserved.</p>
+        </div>
+
+    </div>
+
+</footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

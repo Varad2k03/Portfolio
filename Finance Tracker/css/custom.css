@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #889200,white, #000428,darkblue);
+    background: linear-gradient(45deg, #ed5306, #5e0a6d,rgb(35, 40, 44));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: left;
+    overflow-x: hidden;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 0;
+}
+
+#chart {
+    display: none;
+}
+
+
+
+.content {
+    padding: 20px;
+}
+
+.main-content {
+    width: 80%;
+    height: auto;
+    margin: 130px auto 100px auto;
+    background-color: rgba(255, 255, 255, 0.426);
+    padding: 30px 30px 30px 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 12px rgb(14, 13, 13);
+}
+
+.main-content h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.budget p {
+    margin-bottom: 0;
+    font-weight: bold;
+    z-index: 99999999;
+}
+
+.budget p span {
+    font-weight: normal;
+}
+
+#expenses {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-weight: 100;
+    color: white;
+}
+
+h2 {
+    font-weight: 100;
+    color: #004e92;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.amout .form-control {
+    margin-bottom: 20px;
+}
+
+.content.primary {
+    text-align: left;
+    color: white;
+}
+
+.amout {
+    margin-bottom: 40px;
+}
+
+.primary h2 {
+    margin-bottom: 15px;
+}
+
+li.list-group-item {
+    text-align: left;
+}
+
+.badge {
+    float: left;
+}
+
+.col {
+    text-align: center;
+}
+
+.badge-primary {
+    font-size: 16px;
+}
+
+svg>g:first-of-type>text {
+    transform: translateX(calc(45% - 150px));
+}
+
+svg>g:nth-child(1)>rect {
+    /* transform: translateX(calc(50% - 150px)); */
+    color: red;
+}
+
+#piechart_3d>div>div:nth-child(1)>div>svg>g:nth-child(3)>g:nth-child(2)>g> {
+    color: red;
+}
+
+.amount {
+    right: 10px;
+    position: absolute;
+    padding: 5px 0 10px 0px;
+    font-size: 20px;
+    bottom: 0;
+    color: green;
+}
+
+li.list-group-item {
+    text-align: center;
+}
+
+.remove {
+    display: inline;
+    width: 20px;
+    float: right;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: -20px;
+    color: red;
+}
+
+#chart .content h2 {
+    margin-top: 20px;
+}
+
+#chartcontrol {
+    width: 66px;
+    height: 33px;
+    margin: -25px auto;
+    background: linear-gradient(to right, #43444424, #003872);
+    border-radius: 10px;
+    float: right;
+    cursor: pointer;
+    text-align: right;
+}
+
+#chartcontrol img {
+    width: 45%;
+    height: 95%;
+    transition: 2s;
+    margin-right: 0;
+    /*margin-right: 2.2em;*/
+}
+
+#reset {
+    width: 60px;
+    height: 30px;
+    margin: 15px auto 0 auto;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#reset img {
+    height: 110%;
+    width: 60%;
+}
+
+path.first-path {
+    stroke: none;
+    stroke-width: 1;
+    stroke-dasharray: none;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 10;
+    fill: rgb(52 52 52);
+    fill-rule: nonzero;
+    opacity: 1;
+}
+
+#add-expense button {
+    width: 30%;
+    float: right;
+}
+
+form label,
+h2,
+.budgetamount,
+.budget p span,
+input.form-control,
+.amount,
+.remove,
+.badge,
+#add-expense button {
+    font-weight: 500;
+    /* color: black/; */
+    /* background:#000428; */
+}
+
+@media (max-width:768px) {
+    .col {
+        flex-basis: auto;
+    }
+
+    #chart .content {
+        padding: 0 !important;
+    }
+
+}
+
+@media (min-width:768px) {
+    .lowerwidth {
+        max-width: 66% !important;
+    }
+}
